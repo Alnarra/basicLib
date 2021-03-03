@@ -26,6 +26,6 @@ For the Encryption Class you simply need to give it a key of the correct size we
 ```Javascript 
 key = crypto.randomBytes(256/8).toString('hex'); 
 enc = new encryption(key) 
-enc.encrypt("text here") 
-enc.decrypt("text here") 
+var ciphertext = enc.encrypt("text here") 
+enc.decrypt(ciphertext) 
 ```
