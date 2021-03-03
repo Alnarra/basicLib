@@ -45,7 +45,7 @@ class logging{
                 }
                 this.event.object !== "" ? message += `;Additional Information: "${this.event.object}"` : "" 
                 message += `;Description:"${this.event.description}"\n`
-                //basically we're going to write to a file if not to webex
+                //basically we're going to write to a file.
                 var filepath = app.getPath("logs")
                 fs.appendFile(filepath + "/" + this.event.dateTime.getFullYear() + (this.event.dateTime.getMonth() + 1) + this.event.dateTime.getDate() + ".log",message, (err) => {
                     if(err) throw err; 
