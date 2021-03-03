@@ -12,7 +12,7 @@ A handy reminder for what the logging modules actually are
 5. Debug - More thenn info we want to see steps along the way
 6. Trace - We want line numbers
 
-Calling this is simple, just created a new logging
+Calling this is simple
 
 ``` Javascript
 log.newEvent(String:Description, Integer or String Log Level)
